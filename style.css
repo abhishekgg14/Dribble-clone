@@ -585,7 +585,7 @@ html{
     .content{
         display: flex;
         flex-direction: column;
-        width: 100vw;
+        width: 99vw;
         align-items: center;
         margin-top: 50px;
         margin-bottom: 30px;
