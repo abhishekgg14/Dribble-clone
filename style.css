@@ -518,7 +518,7 @@ html{
     
     .nav-bar{
         display: flex;
-        width: 90vmax;
+        width: 90%;
         justify-content: space-between;
         margin: 30px 30px ;
         align-items: center;
@@ -544,6 +544,7 @@ html{
         display: flex;
         gap: 28px;
         align-items: center;
+        margin-right: 30px;
     }
     
     .search-bar{
