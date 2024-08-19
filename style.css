@@ -656,10 +656,10 @@ html{
     .btn-start:hover{
         background-color: rgb(54, 54, 54);
     }
-
+/* 
     .cards-section{
         overflow: hidden;
-    }
+    } */
 
     .cards-set{
         display: flex;
