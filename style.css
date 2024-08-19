@@ -520,7 +520,7 @@ html{
         display: flex;
         width: 90%;
         justify-content: space-between;
-        margin: 30px 30px ;
+        margin: 30px 15px ;
         align-items: center;
         
     }
@@ -542,7 +542,7 @@ html{
     
     .nav-items-right{
         display: flex;
-        gap: 28px;
+        gap: 18px;
         align-items: center;
     }
     
