@@ -544,7 +544,6 @@ html{
         display: flex;
         gap: 28px;
         align-items: center;
-        margin-right: 30px;
     }
     
     .search-bar{
