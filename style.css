@@ -159,21 +159,89 @@ html{
         background-color: rgb(54, 54, 54);
     }
 
+    .cards-section{
+        overflow: hidden;
+    }
+
     .cards-set{
         display: flex;
         gap: 25px;
-        overflow-x: auto; /* to get a scroll bar for cards set only*/
+        /* overflow-x: auto; to get a scroll bar for cards set only */
+        animation-name: card-animation;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
     }
     .cards-set::-webkit-scrollbar{  /*webkit is property used inside google chrome */
-        display: none;
+        display: none;                 /*hides scroll bar*/
     }
+    @keyframes card-animation{
+        0%{}
+        100%{
+            transform: translate(-66%); /*to make it move along x-anis*/
+        }
+    } 
 
     .card{
-        width: 240px;
-        height: 280px;
+        width: 250px;
+        height: 300px;
         background-color: aquamarine;
         border-radius:18px; 
         flex-shrink: 0; /*it shops the cards from shrinking*/
+        overflow: hidden;
+        position: relative;
+    }
+
+    .user{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .tint{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(51.91%, transparent), color-stop(75.88%, rgba(0, 0, 0, 0.3)));
+        background: linear-gradient(180deg, transparent 51.91%, rgba(0, 0, 0, 0.3) 75.88%);
+    }
+
+    .card-caption{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        bottom: 0;
+        left: 10px;
+        color: white;
+        font-family: sans-serif;
+    }
+
+    .name{
+        margin-bottom: 5px;
+        font-size: 14px;
+      font-weight: 550;  
+    }
+    .designation{
+        margin: 0;
+        font-size: 14px;
+        font-weight: 540;
+    }
+
+    .skill-set{
+        display: flex;
+        margin-top: 0;
+        gap: 5px;
+    }
+    .skill{
+        font-size: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.281);
+        padding: 5px 10px;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.137);
     }
 
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------- */
