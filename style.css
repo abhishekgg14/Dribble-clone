@@ -518,7 +518,7 @@ html{
     
     .nav-bar{
         display: flex;
-        width: 90vw;
+        width: 90vmax;
         justify-content: space-between;
         margin: 30px 30px ;
         align-items: center;
